@@ -1,0 +1,118 @@
+/* ==========Post card============ */
+.postCard {
+    width: 228.914px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+padding: 5px 10px;
+
+}
+
+.postCard__categoryBadge {
+    position: relative;
+    margin-right: 7px;
+}
+
+.postCard__image img {
+    border-radius: 10px;
+}
+
+.postCard__image img {
+    width: 228.914px;
+    height: 153px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.postCard__details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.createdBy {
+    color: #1C103B;
+    font-size: 9px;
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+.postCard__detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellowgreen; */
+}
+
+.createdOnAndBy {
+    color: #1C103B;
+    font-size: 9px;
+    font-family: Nunito;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+
+.postCard__title{
+color: #0E081E;
+font-size: 14px;
+font-family: Nunito;
+font-weight: 700;
+width: 100%;
+text-align: center;
+}
+.postCard__text{
+ color: #1C103B;
+font-size: 13px;
+ font-family: Lato;
+line-height: 16px;
+text-align: center;
+word-break: normal;
+}
+/* ==========CATEGORY BADGE============ */
+.postCategory {
+    /* width: 100px; */
+    /* height: 40px; */
+    padding: 2px 5px;
+    align-items: center;
+    background-color: #FFDA47;
+    border: 1px solid #FFDA47;
+    border-radius: 5px;
+    color: #1C103B;
+    text-align: right;
+    font-size: 10px;
+    font-family: Nunito;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:570px) {
+    .postCard {
+       width: 100%;
+    
+    }
+    
+    .postCard__categoryBadge {
+        position: relative;
+        margin-right: 60px;
+    }
+    .postCard {
+        width: 100%;
+
+    }
+
+    .postCard__image {
+        width: 100%;
+        height: 153px;
+    }
+    .postCard__image img {
+        width: 100%;
+        height: 153px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
