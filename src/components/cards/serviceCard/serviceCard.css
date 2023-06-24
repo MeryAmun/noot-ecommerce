@@ -1,0 +1,107 @@
+.serviceCard{
+    width: 230px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.serviceCard1{
+    width: 230px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #7C58D3;
+}
+
+.serviceCard__header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.serviceCard__headerTitle1{
+    color:  #FFF;
+    font-size: 15px;
+    font-family: Nunito;
+    font-weight: 800;
+    line-height: 30px;
+}
+.serviceCard__headerTitle{
+    color: #0E081E;
+    font-size: 15px;
+    font-family: Nunito;
+    font-weight: 800;
+    line-height: 30px;
+}
+.serviceCard__image{
+    width:40px;
+    height: 40px;
+}
+.serviceCard__image img{
+    width:40px;
+    height: 40px;
+    object-fit: contain;
+}
+.serviceCard__details{
+
+}
+.serviceCard__text{
+    color: #1C103B;
+    font-size: 10px;
+    font-family: Lato;
+line-height: 16px;
+}
+.serviceCard__text1{
+    color:  #FFF;
+    font-size: 10px;
+    font-family: Lato;
+line-height: 16px;
+}
+.serviceCard__price{
+    color: #1C103B;
+    font-size: 12px;
+    font-family: Lato;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.serviceCard__price1{
+    color:  #FFF;
+    font-size: 12px;
+    font-family: Lato;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.serviceCard__link{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+}
+.serviceCard__linkTitle{
+    color: #7C58D3;
+    font-size: 12px;
+    font-family: Nunito;
+    font-weight: 800;
+    line-height: 15px;
+    margin-right: 10px;
+}
+.serviceCard__linkTitle1{
+    color: #FFDA47;
+    font-size: 12px;
+    font-family: Nunito;
+    font-weight: 800;
+    line-height: 15px;
+    margin-right: 10px;
+}

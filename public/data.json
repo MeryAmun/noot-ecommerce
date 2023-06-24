@@ -1,0 +1,132 @@
+{
+
+
+    "services":[
+
+     {
+"iconUrl":"/images/Service-2.svg",
+"title":"Pet Grooming",
+"text":"Et odio pellentesque diam volutpat commodo sed egestas egestas  pellentesque nec nam ",
+"price":"From $39 / complex",
+"link":"/services"
+     },
+     {
+"iconUrl":"/images/Service-4.svg",
+"title":"Pet Training",
+"text":"Aliquam ut porttitor leo a diam sollicitudin tempor  sit amet est placerat",
+"price":"From $27 / hour",
+"link":"/services"
+     },
+     {
+"iconUrl":"/images/Service-6.svg",
+"title":"Pet taxi",
+"text":"Maecenas ultricies mi eget mauris pharetra et ultrices consectetur adipiscing elit",
+"price":"From $22 / trip",
+"link":"/services"
+     },
+     {
+"iconUrl":"/images/Service-3.svg",
+"title":"Health & Wellness",
+"text":"Amet porttitor eget dolor morbi non arcu risus quis varius blandit aliquam etiam",
+"price":"From $15 / visit",
+"link":"/services"
+     },
+     {
+"iconUrl":"/images/Service-5.svg",
+"title":"Pet Hotel",
+"text":"Turpis massa sed elementum tempus egestas sed sed risus aliquam  urna cursus eget n",
+"price":"From $15 / night",
+"link":"/services"
+     }
+    ],
+    "latest_products":[
+        {
+            "postedBy":"by Corabelle Durrad",
+            "postedOn":"02.01.2022",
+            "title":"5 Crazy Things Dogs Do When Left Alone At Home",
+            "text":"Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.",
+            "imageUrl":"/images/latest-posts1.png",
+            "categoryTitle":"TRAINING"
+        },
+        {
+            "postedBy":"by Corabelle Durrad",
+            "postedOn":"02.01.2022",
+            "title":"Your Dog Desperately Needs From You",
+            "text":"Amet porttitor eget dolor morbi non arcu risus quis varius  sodales ut etiam sit amet ",
+            "imageUrl":"/images/latest-posts2.png",
+            "categoryTitle":"PET HEALTH"
+        },
+        {
+            "postedBy":"by Corabelle Durrad",
+            "postedOn":"02.01.2022",
+            "title":"Top Cat Foods to Consider If You Are a First Time Owner",
+            "text":"Vel eros donec ac odio tempor orci dapibus ultrices. Arcu felis bibendum ut tristique et egestas quis",
+            "imageUrl":"/images/latest-posts3.png",
+            "categoryTitle":"PET FOOD"
+        }
+    ],
+    "categories": {
+        "featured": [
+             {  
+                "imageUrl":"/images/featured1.png",
+                "detail":"Detachable Gravity Bowl Food Feeder",
+                "rating":"",
+                "price":"$30.12"
+            },
+             {  
+                "imageUrl":"/images/featured2.png",
+                "detail":"Dog Collar for Small, Medium, Large Dogs",
+                "rating":"",
+                "price":"$16.88"
+            },
+             {  
+                "imageUrl":"/images/featured3.png",
+                "detail":"Pink Embossed Spiked Collar",
+                "rating":"",
+                "price":"$34.98"
+            }
+        ],
+        "on_sale":[
+            {  
+                "imageUrl":"/images/on-sale1.png",
+                "detail":"Black Leather Spike Dog Collar, Small",
+                "rating":"",
+                "price":"$23.55"
+            },
+             {  
+                "imageUrl":"/images/on-sale2.png",
+                "detail":"Dog Chew Toys for Chewers",
+                "rating":"",
+                "price":"$8.99"
+            },
+             {  
+                "imageUrl":"/images/on-sale3.png",
+                "detail":"Duck Jerky Strips Dog Treats",
+                "rating":"",
+                "price":"$32.99"
+            }
+        ],
+        "top_rated":[
+            {  
+                "imageUrl":"/images/top-rated.png",
+                "detail":"Carrying Bag for Cats Weighing up to 6 kg",
+                "rating":"",
+                "price":"$70.43"
+            },
+             {  
+                "imageUrl":"/images/top-rated.png",
+                "detail":"Rhinestone Pet Collar",
+                "rating":"",
+                "price":"$35.66"
+            },
+             {  
+                "imageUrl":"/images/top-rated.png",
+                "detail":"Teeth Cleaning Toy for Dogs",
+                "rating":"",
+                "price":"$12.98"
+            }
+        ]
+    }
+        
+    
+}

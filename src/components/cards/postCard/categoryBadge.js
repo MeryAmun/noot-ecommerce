@@ -1,8 +1,7 @@
 import './postCard.css'
-import { Typography } from '@mui/material'
-const CategoryBadge = ({title}) => {
+const CategoryBadge = ({name}) => {
     return (
-        <span className="postCategory">{title}</span>
+        <span className="postCategory">{name}</span>
     )
 }
 

@@ -1,0 +1,40 @@
+.categoryCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.categoryCardImage img{
+    width: 70px;
+    height: 46;
+    object-fit: contain;
+}
+.categoryCardDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+}
+.categoryCardDetail{
+        color: #0E081E;
+        text-align: center;
+        font-size: 12px;
+        font-family: Nunito;
+        font-weight: 700;
+        line-height: 15px;
+}
+.categoryCardDetailPrice{
+        color: #7C58D3;
+        text-align: center;
+        font-size: 12px;
+        font-family: Nunito;
+        font-weight: 700;
+        line-height: 30px;
+        margin-right: 5px;
+}
+.categoryRating{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
