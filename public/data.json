@@ -1,5 +1,26 @@
 {
-
+ "stats":[
+    {
+        "text":"Satisfied Clients",
+        "number":"120+",
+        "imageUrl":"/images/pets.svg"
+    },
+    {
+        "text":"Years Experience",
+        "number":"20+",
+        "imageUrl":"/images/pet.svg"
+    },
+    {
+        "text":"Brands Available",
+        "number":"70+",
+        "imageUrl":"/images/canned-food.svg"
+    },
+    {
+        "text":"Products for pets",
+        "number":"200+",
+        "imageUrl":"/images/shopping-bag.svg"
+    }
+ ],
 
     "services":[
 

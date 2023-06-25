@@ -1,11 +1,11 @@
 import { GET_ALL_PRODUCTS } from './constants'
 
 
-export const reducer = (state = {products: null},action) => {
+export const reducer = (state = {products: []},action) => {
     switch (action.type) {
         case GET_ALL_PRODUCTS: 
         return { ...state, 
-            posts:action.payload.data,
+            products:action.payload.data,
            }
     
         default:

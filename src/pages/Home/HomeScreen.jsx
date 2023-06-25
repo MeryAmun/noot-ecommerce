@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import { Box } from "@mui/material";
 import "./home.css";
 import {
@@ -6,38 +6,46 @@ import {
   ServiceCard,
   ContactCard,
   CategoryCard,
+  StatsCard,
 } from "../../components/cards/index";
 import { contactInfo, otherPostsData } from "../../dummyData/data";
-import { Banner, luxury1, luxury2, service1, luxury3 } from "../../assets";
+import { Banner, service1 } from "../../assets";
 import { FaPhoneAlt, BsArrowRightShort } from "../../assets/icons/icons";
 import { Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { getProducts } from "../../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
 
 const HomeScreen = () => {
-  const [data, setData] = useState([]);
-
-  const getData = () => {
-    fetch("data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
+  const dispatch = useDispatch();
+  const productsQuery = useQuery({
+    queryKey: ["products"],
+    queryFn: async () =>
+     await fetch("data.json", {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }).then(function (response) {
         console.log(response);
         return response.json();
-      })
-      .then(function (myJson) {
-        setData(myJson);
-      });
-  };
+      }),
+  });
+
   useEffect(() => {
-    getData();
+
+    dispatch(getProducts(productsQuery.data));
   }, []);
 
-  const { latest_products, categories, services } = data;
+  const { latest_products, categories, services, stats } = productsQuery.data || {};
 
   return (
     <Box className="home">
+      <Box className="home__stats">
+        {stats?.map((stat, index) => (
+          <StatsCard stat={stat} key={index} />
+        ))}
+      </Box>
       <Box className="home__otherPosts">
         <Box className="home__contactHeader">
           <h5 className="smallTitle">OUR SERVICES</h5>
@@ -65,16 +73,12 @@ const HomeScreen = () => {
               <BsArrowRightShort size={20} color="#FFDA47" />
             </Link>
           </Box>
-       {
-        services?.map((item, index) => (
-          <ServiceCard service={item} key={index}/>
-        ))
-       }
+          {services?.map((item, index) => (
+            <ServiceCard service={item} key={index} />
+          ))}
         </Box>
       </Box>
-      <Box className="">HomeScreen</Box>
-
-      <Box className="container">
+      {/* <Box className="container">
         <Box className="container__left">
           <Box className="home__contactHeader">
             <h2 className="home__contactHeading">Check Out Our Specials</h2>
@@ -95,8 +99,8 @@ const HomeScreen = () => {
               <img src={luxury3} alt="before categories" />
             </Box>
           </Box>
-        </Box>
-        <Box className="container__right">
+        </Box> */}
+        {/* <Box className="container__right">
           <Box className="container__rightTop">
             <Box className="container__rightTopInner">
               <Box className="container__rightTopInnerHeader">
@@ -127,8 +131,8 @@ const HomeScreen = () => {
               <img src={luxury2} alt="" className="container__rightTopImage" />
             </Box>
           </Box>
-        </Box>
-      </Box>
+        </Box> */}
+      {/* </Box> */}
       <Box className="home__categories">
         <Box className="home__category">
           <h2 className="home__otherPostHeading">Featured Products</h2>

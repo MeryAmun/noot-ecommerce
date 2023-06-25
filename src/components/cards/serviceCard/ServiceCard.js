@@ -2,7 +2,7 @@ import { BsArrowRightShort } from "../../../assets/icons/icons";
 import { Box } from "@mui/material";
 import "./serviceCard.css";
 import { Link } from "react-router-dom";
-import { service1 } from "../../../assets";
+
 
 const ServiceCard = ({service}) => (
   <Box className="serviceCard">

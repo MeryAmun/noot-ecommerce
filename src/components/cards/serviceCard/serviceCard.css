@@ -21,7 +21,9 @@
     padding: 10px 20px;
     border-radius: 5px;
     margin: 10px 0;
-    background-color: #7C58D3;
+    background-image: url('../../../assets/images/cardActive.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .serviceCard__header{
@@ -103,5 +105,66 @@ line-height: 16px;
     font-family: Nunito;
     font-weight: 800;
     line-height: 15px;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+
+/* ===========================BENEFITS CARD STYLES============================= */
+.benefitsCard__icon{
+border: 1px solid lightgray;
+padding: 3px 5px;
+margin-right: 5px;
+border-radius: 5px;
+}
+.benefitsCard__title{
+    color: #1C103B;
+    font-size: 13px;
+    font-family: Nunito;
+    font-weight: 800;
+}
+.benefitsCard__text{
+    color: #1C103B;
+    font-size: 10px;
+    font-family: Lato;
+}
+/* =======================STATS================================= */
+
+@media screen and (max-width:570px) {
+    .stats__card{
+        margin: 10px 0;
+    }
+}
+
+
+
+.stats__card{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.stats__cardImage{
+  padding: 0 10px;
+}
+.stats__cardImage img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+.stats__cardDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+}
+.stats__numberOfClients{
+    color: #FFF;
+    font-size: 20px;
+    font-family: Nunito;
+    font-weight: 800;
+}
+.stats__numberOfClientsText{
+    color: #FFF;
+    font-size: 10px;
+    font-family: Lato;
 }

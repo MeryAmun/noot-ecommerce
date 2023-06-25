@@ -1,13 +1,12 @@
 import { GET_ALL_PRODUCTS } from "./constants"
 
 
-export const getProducts = (page) => async (dispatch) => {
+export const getProducts = (data) => async (dispatch) => {
     try {
-      const { data } = await api.fetchPosts(page)
-   
-      dispatch({ type: GET_ALL_PRODUCTS, payload: data })
+      console.log(data)
+      dispatch({ type: GET_ALL_PRODUCTS, payload:data })
 
     } catch (error) {
-      console.log(error.message)
+      console.log(error)
     }
   }
