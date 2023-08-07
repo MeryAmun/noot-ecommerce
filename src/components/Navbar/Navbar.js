@@ -2,8 +2,7 @@ import React from "react";
 import NavBarHeader from "./NavbarHeader";
 import { Box } from "@mui/material";
 import { logoNav , dogHero} from "../../assets";
-import { FaShoppingCart,FaPhoneAlt,
-  BsArrowRightShort,
+import { FaShoppingCart,
   FaTruckMoving,
   BiSolidCheckShield,
   MdSupportAgent,

@@ -1,10 +1,12 @@
+import useQueryHook from "../utils/useQueryHook"
 import { GET_ALL_PRODUCTS } from "./constants"
 
+export const getProducts = () => async (dispatch) => {
 
-export const getProducts = (data) => async (dispatch) => {
     try {
-      console.log(data)
-      dispatch({ type: GET_ALL_PRODUCTS, payload:data })
+      const  productData  = await useQueryHook()
+      
+      dispatch({ type: GET_ALL_PRODUCTS, payload:productData })
 
     } catch (error) {
       console.log(error)

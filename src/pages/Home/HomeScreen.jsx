@@ -1,4 +1,4 @@
-import React, {  useEffect } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 import "./home.css";
 import {
@@ -12,32 +12,12 @@ import { contactInfo, otherPostsData } from "../../dummyData/data";
 import { Banner, service1 } from "../../assets";
 import { FaPhoneAlt, BsArrowRightShort } from "../../assets/icons/icons";
 import { Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "../../redux/actions";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const HomeScreen = () => {
-  const dispatch = useDispatch();
-  const productsQuery = useQuery({
-    queryKey: ["products"],
-    queryFn: async () =>
-     await fetch("data.json", {
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      }).then(function (response) {
-        console.log(response);
-        return response.json();
-      }),
-  });
+  const { products } = useSelector((state) => state);
 
-  useEffect(() => {
-
-    dispatch(getProducts(productsQuery.data));
-  }, []);
-
-  const { latest_products, categories, services, stats } = productsQuery.data || {};
+  const { latest_products, categories, services, stats } = products || {};
 
   return (
     <Box className="home">

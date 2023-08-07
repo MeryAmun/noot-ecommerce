@@ -1,7 +1,6 @@
 import CategoryBadge from './categoryBadge'
 import { FaUser,FaCalendarDay } from '../../../assets/icons/icons'
 import { Box } from '@mui/material'
-import { otherPost1 } from '../../../assets'
 import './postCard.css'
 
 const PostCard = ({others}) => (

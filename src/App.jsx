@@ -1,24 +1,38 @@
-
+import React, {  useEffect } from "react";
 import './App.css';
 import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
+  useQuery
 } from '@tanstack/react-query'
 import { HomeScreen } from './pages';
 import { Footer, Navbar } from './components';
+import { getProducts } from "./redux/actions";
+import { useDispatch } from "react-redux";
+import useQueryHook from "./utils/useQueryHook";
+
+
 
 function App() {
-  const queryClient = new QueryClient()
+  const dispatch = useDispatch();
+    useQuery({
+    queryKey: ["products"],
+    queryFn:useQueryHook().then((data) => {
+      return data
+    })
+  });
+
+
+
+  
+  useEffect(() => {
+
+    dispatch(getProducts());
+  }, [dispatch]);
+  //console.log(productsQuery?.data);
   return (
    
     <div className="App">
       <Navbar/>
-      <QueryClientProvider client={queryClient}>
      <HomeScreen/>
-     </QueryClientProvider>
      <Footer/>
     </div>
     

@@ -1,6 +1,6 @@
 import { Box } from'@mui/material'
 import './serviceCard.css'
-import { pets } from '../../../assets';
+
 
 
 const NavBarHeader = ({stat}) => (
